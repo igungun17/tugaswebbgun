@@ -1,0 +1,51 @@
+*,
+::before
+::after {
+    margin : 0;
+    padding : 0;
+   box-sizing: content-box;
+   -webkit-box-sizing: border-box;
+}
+
+.carousel-inner {
+    size: 100px;
+}
+
+.hero_img {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/img/hero2.JPG);
+}
+
+.hero_img::before {
+    content: "";
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: #232323;
+    top: 0;
+    opacity: 0.6;
+}
+
+.hero_title {
+    text-align: center;
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    right: 10%;
+    color: #fff;
+}
+
+footer {
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: grey;
+}
+
+button {
+    align-items: center;
+}
